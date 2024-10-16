@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@100;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Poppins",sans-serif;
+}
+
+
+/* Slick slider arrows */
+.slick-prev, 
+.slick-next {
+    background-color: gray; /* Set background color of the arrows to gray */
+    border-radius: 50%; /* Make the arrows circular */
+    width: 30px; /* Adjust size */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Arrow color */
+    z-index: 1; /* Ensure the arrows are visible */
+}
+
+/* Arrow hover effect */
+.slick-prev:hover, 
+.slick-next:hover {
+    background-color: darkgray; /* Slightly darker gray on hover */
+}
+
+/* Dot navigation */
+.slick-dots li button:before {
+    color: gray; /* Set the dot color to gray */
+}
+
+.slick-dots li.slick-active button:before {
+    color: darkgray; /* Set the active dot to a darker gray */
+}
